@@ -22,8 +22,7 @@ public class RespawnScript : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            player.transform.position = new Vector3(0, 0, -5);
-            //player.transform.position = respawnPoint.transform.position;
+            player.transform.position = respawnPoint.transform.position;
             Debug.Log("Player Detected");
         }
     }
